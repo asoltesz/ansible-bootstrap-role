@@ -1,0 +1,10 @@
+---
+
+#
+# Ensuring that the OpenEBS local hostpath provisioner is able to allocate
+# volumes in local folders
+#
+- name: Create the OpenEBS hostpath storage directory
+  file:
+    path: /var/openebs/local
+    state: directory

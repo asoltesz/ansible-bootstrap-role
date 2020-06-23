@@ -2,6 +2,9 @@
 - import_tasks: hostname.yml
   tags: bootstrap-hostname
 
+- import_tasks: openebs.yml
+  tags: bootstrap-openebs
+
 - import_tasks: update_system.yml
   tags: bootstrap-update-system
 
